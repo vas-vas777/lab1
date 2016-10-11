@@ -1,18 +1,18 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
-
+#include<conio.h>
 
 int main()
 {
 	int s, h2, a, b, h;  
-	printf("a= ");scanf_s("%d", &a);  // вводим значения сторон параллелограмма a=9 и b=15  
-	printf("b= ");scanf_s("%d", &b);  // задаём значение высоте h=10,которая опущена на сторону a 
-	printf("h= ");scanf_s("%d", &h);  // Необхадимо найти высоту(h2), опущенную на вторую сторону параллелограмма
-	s=h*a;  // находим площадь  
-	h2=s/b; // искомая высота  
-	printf("h2=%d",h2); // выводим значение высоты 
-	system("pause");
+	printf("a= ");scanf_s("%d", &a);  
+	printf("b= ");scanf_s("%d", &b);   
+        printf("h= ");scanf_s("%d", &h);  
+	s=h*a;  
+	h2=s/b;   
+	printf("h2=%d",h2);  
+	getch();
 	return 0;
 }
 
