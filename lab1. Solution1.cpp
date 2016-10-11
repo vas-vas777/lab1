@@ -5,13 +5,13 @@
 
 int main()
 {
-	int s, h2, a, b, h;  
+	int s,  alt2, a, b, alt1;  
 	printf("a= ");scanf_s("%d", &a);  
 	printf("b= ");scanf_s("%d", &b);   
-        printf("h= ");scanf_s("%d", &h);  
+        printf("alt1= ");scanf_s("%d", &alt1);  
 	s=h*a;  
 	h2=s/b;   
-	printf("h2=%d",h2);  
+	printf("alt2=%d",  alt2);  
 	getch();
 	return 0;
 }
