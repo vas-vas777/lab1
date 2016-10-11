@@ -1,25 +1,26 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
+#include<conio.h>
 
 int main()
 {    
 	int p,xA,xB,xC,p2;    
 	char A,B,C;
-	p = 0; p2 = 0; //обнуляем значения
-	printf("xA= ");scanf_s("%d", &xA);scanf_s("%c", &A); //вводим координату точки А и саму точку А 
-	printf("xB= ");scanf_s("%d", &xB);scanf_s("%c", &B); //вводим коррдинату точки В и саму точку В    
-	printf("xC= ");scanf_s("%d", &xC);scanf_s("%c", &C); //вводим координату точки С и саму точку С    
+	p = 0; p2 = 0; 
+	printf("xA= ");scanf_s("%d", &xA);scanf_s("%c", &A); 
+	printf("xB= ");scanf_s("%d", &xB);scanf_s("%c", &B);    
+	printf("xC= ");scanf_s("%d", &xC);scanf_s("%c", &C); 
       if (xB-xA>0)  
-		  p=xB-xA;  //вычисляем значение расстояния от точки А до В, когда В положительной части прямой   
-	  else p=xA-xB;   //или когда В в отрицательной части прямой
-	      if (xC-xA>0)        
-		      p2=xC-xA;    //вычисляем значение расстояния от точки А до С, когда С в положительной части прямой
-	      else p2=xA-xC;    //или когда С в отрицательной части прямой
-	          if (p>p2)       //сравниваем расстояния и выбираем которое меньше и выводим его резельтат на экран.
-		          printf("p2=%d %c",p2,C);    
-	          else printf ("p=%d %c",p,B);  
-	system("pause");
+	  p=xB-xA;  
+      else p=xA-xB;   
+      if (xC-xA>0)        
+          p2=xC-xA;    
+      else p2=xA-xC;    
+      if (p>p2)       
+          printf("p2=%d %c",p2,C);    
+      else printf ("p=%d %c",p,B);  
+	getch();
 	return 0;
 }
 
