@@ -13,7 +13,7 @@ int main()
 	s=alt1*a;  
 	alt2=s/b;   
 	printf("alt2=%d",  alt2);  
-	getch();
+	_getch();
 	return 0;
 }
 
